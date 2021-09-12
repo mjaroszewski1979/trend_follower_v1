@@ -5,15 +5,17 @@ from extensions import db, login_manager
 from models import User, Markets, MarketsPro
 from utilities import TrendFollower 
 import threading
+from os import environ
 
-
-
-
+user_name = environ.get('USER_NAME')
+user_password = environ.get('USER_PASSWORD')
+email_name = environ.get('EMAIL_NAME')
+email_password = environ.get('EMAIL_PASSWORD')
 
 main = Blueprint('main', __name__)
 
-tf = TrendFollower(user_name = 'trend_follower',user_password = 'turtle_trader',
-email_name = 'mjaroherokuapp@gmail.com', email_password = 'mjaroherokuapp1234')
+tf = TrendFollower(user_name = user_name, user_password = user_password,
+email_name = email_name, email_password = email_password)
 
 @login_manager.user_loader
 def user_loader(name):
