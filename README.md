@@ -1,0 +1,1 @@
+# trend_follower_v1
