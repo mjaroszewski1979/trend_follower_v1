@@ -17,6 +17,13 @@
 * A highly adaptable and scalable workflow for structuring and configuring a production-grade flask application using flask blueprints and the application factory pattern
 
 
+--------------------------------------------------
+
+### Code Coverage
+
+<img src="https://github.com/mjaroszewski1979/trend_follower_v1/blob/main/coverage_img.png">
+
+
 -------------------------------------------------
 
  ![caption](https://github.com/mjaroszewski1979/follow_the_trend/blob/main/trend_follower.gif)
