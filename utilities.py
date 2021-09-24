@@ -4,7 +4,7 @@ import smtplib
 from email.message import EmailMessage
 from pandas_datareader._utils import RemoteDataError
 
-
+# Creating base trend follower class
 class TrendFollower:
     def __init__(self, user_name, user_password, email_name, email_password):
         self.user_name = user_name
@@ -31,7 +31,8 @@ class TrendFollower:
             'LITECOIN' : 'CBLTCUSD',
             'ETHEREUM' : 'CBETHUSD'
             }  
-
+    
+    # Fetching data from Federal Reserve API and establishing current trend direction
     def get_trend(self, symbol, start = datetime.datetime(2020, 1, 1), end = datetime.datetime.now()):
         try:
             df = pdr.DataReader(symbol, 'fred', start, end)
@@ -41,7 +42,8 @@ class TrendFollower:
                 return 'BEARISH'
         except RemoteDataError:
             return 'CONNECTION ERROR.'
-
+    
+    # Sending email using gmail and smtplib
     def send_mail(self, name, email):
         message = "Thank you" + " " + name.capitalize() + " " + "for registration. You can now login with the Trend Follower - name:" + " " + self.user_name + "and password:" + " " + self.user_password + "."
         msg = EmailMessage()
