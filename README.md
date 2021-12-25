@@ -26,7 +26,7 @@
 
 -------------------------------------------------
 
- ![caption](https://github.com/mjaroszewski1979/trend_follower_v1/blob/main/trend_follower.gif)
+ ![caption](https://github.com/mjaroszewski1979/trend_follower_v1/blob/main/trend_mockup.png)
 
   
   Live | Code | Docker | Technologies
