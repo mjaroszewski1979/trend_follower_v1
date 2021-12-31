@@ -21,7 +21,7 @@
 
 ### Code Coverage
 
-<img src="https://github.com/mjaroszewski1979/trend_follower_v1/blob/main/coverage_img.png">
+<img src="https://github.com/mjaroszewski1979/trend_follower_v1/blob/main/cov_report.png">
 
 
 -------------------------------------------------
